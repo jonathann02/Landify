@@ -1,0 +1,11 @@
+C:\Landify\backend\src\Landify.Domain\bin\Debug\net9.0\Landify.Domain.deps.json
+C:\Landify\backend\src\Landify.Domain\bin\Debug\net9.0\Landify.Domain.dll
+C:\Landify\backend\src\Landify.Domain\bin\Debug\net9.0\Landify.Domain.pdb
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.AssemblyInfoInputs.cache
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.AssemblyInfo.cs
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.csproj.CoreCompileInputs.cache
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.dll
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\refint\Landify.Domain.dll
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\Landify.Domain.pdb
+C:\Landify\backend\src\Landify.Domain\obj\Debug\net9.0\ref\Landify.Domain.dll

@@ -1,0 +1,6 @@
+@Landify.Api_HostAddress = http://localhost:5111
+
+GET {{Landify.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
