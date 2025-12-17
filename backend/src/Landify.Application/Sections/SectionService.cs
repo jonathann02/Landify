@@ -25,7 +25,7 @@ public class SectionService
         return await _sectionRepository.GetBySiteAsync(siteId, cancellationToken);
     }
 
-      public async Task<Section?> AddSectionAsync(Guid siteId, Guid userId, string type, int sortOrder, string contentJson, CancellationToken cancellationToken)
+    public async Task<Section?> AddSectionAsync(Guid siteId, Guid userId, string type, int sortOrder, string contentJson, CancellationToken cancellationToken)
     {
         var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken);
         if (site is null || site.UserId != userId)
@@ -51,22 +51,21 @@ public class SectionService
     }
 
     public async Task<Section?> UpdateSectionAsync(Guid siteId, Guid sectionId, Guid userId, string type, int sortOrder, string contentJson, CancellationToken cancellationToken)
-
-    { 
-        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken); 
+    {
+        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken);
         if (site is null || site.UserId != userId)
         {
             return null;
         }
 
-        var section = await _sectionsRepository.GetByIdAsync(sectionId, cancellationToken); 
+        var section = await _sectionRepository.GetByIdAsync(sectionId, cancellationToken);
         if (section is null || section.SiteId != siteId)
         {
             return null;
         }
 
-        section.Type = type; 
-        sectionSortOrder = sortOrder;
+        section.Type = type;
+        section.SortOrder = sortOrder;
         section.ContentJson = contentJson;
         section.UpdatedAt = DateTimeOffset.UtcNow;
 
@@ -77,27 +76,26 @@ public class SectionService
 
     public async Task<bool> DeleteSectionAsync(Guid siteId, Guid sectionId, Guid userId, CancellationToken cancellationToken)
     {
-        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken); 
+        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken);
         if (site is null || site.UserId != userId)
         {
             return false;
         }
 
-        var section = await _sectionRepository.GetByIdAsync(sectionId, cancellationToken); 
+        var section = await _sectionRepository.GetByIdAsync(sectionId, cancellationToken);
         if (section is null || section.SiteId != siteId)
         {
             return false;
         }
 
-        await _sectionRepository.DeleteAsync(sectionId, cancellationToken);
+        await _sectionRepository.DeleteAsync(section, cancellationToken);
         await _sectionRepository.SaveChangesAsync(cancellationToken);
         return true;
-
     }
 
     public async Task<bool> ReorderSectionsAsync(Guid siteId, Guid userId, IDictionary<Guid, int> sortOrders, CancellationToken cancellationToken)
     {
-        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken); 
+        var site = await _siteRepository.GetByIdAsync(siteId, cancellationToken);
         if (site is null || site.UserId != userId)
         {
             return false;
@@ -106,16 +104,14 @@ public class SectionService
         var sections = await _sectionRepository.GetBySiteAsync(siteId, cancellationToken);
         foreach (var section in sections)
         {
-            if (sortOrders.TryGetValue(section.id, out var sortOrder))
+            if (sortOrders.TryGetValue(section.Id, out var sortOrder))
             {
                 section.SortOrder = sortOrder;
                 section.UpdatedAt = DateTimeOffset.UtcNow;
-
             }
         }
 
-        await _sectionRepository.SaveChangesAsync(cancellationToken); 
+        await _sectionRepository.SaveChangesAsync(cancellationToken);
         return true;
     }
-
 }

@@ -1,0 +1,23 @@
+# .NET build output
+**/bin/
+**/obj/
+
+
+.vs/
+.idea/
+.vscode/
+
+# User secrets / local settings
+**/appsettings.*.local.json
+
+# Node
+**/node_modules/
+**/dist/
+**/.vite/
+**/.env
+**/.env.local
+
+# SQLite 
+**/*.db
+**/*.db-shm
+**/*.db-wal
