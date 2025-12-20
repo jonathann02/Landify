@@ -7,4 +7,76 @@ export const sv = {
   "nav.register": "Registrera dig",
   "nav.getStarted": "Kom igång",
 
+  "landing.navHowItWorks": "Så funkar det",
+  "landing.navTemplates": "Mallar",
+  "landing.navUseCases": "Användningsfall",
+  "landing.heroBadge": "Byggt för icke-tekniska team",
+  "landing.heroTitle": "Lansera bättre landningssidor utan att röra WordPress.",
+  "landing.heroSubtitle":
+    "Landify låter dig bygga fokuserade, konverterande kampanjsidor av återanvändbara sektioner. Inga plugins att uppdatera, inga teman som går sönder – bara rena landningssidor som dina annonser och sociala flöden kan lita på.",
+  "landing.heroCtaPrimary": "Börja bygga nu",
+  "landing.heroCtaSecondary": "Se hur det funkar",
+  "landing.servicesTitle": "Hur Landify funkar",
+  "landing.servicesDescription":
+    "Landify är gjort för team som behöver landningssidor snabbt men vill slippa risk och overhead från tunga webbsidebyggare.",
+  "landing.servicesStep1Title": "Välj en layout",
+  "landing.servicesStep1Desc":
+    "Börja från en ren layout eller en färdig mall för din kampanj – inga teman eller sidbyggare behövs.",
+  "landing.servicesStep2Title": "Lägg till sektioner",
+  "landing.servicesStep2Desc":
+    "Lägg till hero, features, testimonials och kontaktsektioner med enkla formulär i stället för krångliga editors.",
+  "landing.servicesStep3Title": "Publicera och dela",
+  "landing.servicesStep3Desc":
+    "Publicera sidan till en delbar URL du kan använda i annonser, e-postkampanjer eller sociala medier.",
+  "landing.servicesStep4Title": "Iterera snabbt",
+  "landing.servicesStep4Desc":
+    "Duplicera sidor, justera sektioner och kör A/B-liknande experiment utan att be en utvecklare om hjälp.",
+  "landing.servicesFootnote": "Enkelt från dag ett",
+  "landing.templatesTitle": "Startmallar",
+  "landing.templatesDescription":
+    "Landify kommer med ett litet urval åsiktsfulla mallar – i den första versionen bygger du sidor från sektioner inspirerade av dessa layouter.",
+  "landing.templatesItemSimple": "Enkel lansering",
+  "landing.templatesItemSimpleDesc": "Ren hero, features och CTA för produkt- eller tjänstelanser.",
+  "landing.templatesItemLead": "Lead magnet",
+  "landing.templatesItemLeadDesc": "Landningssida för e-postinsamling till guider eller resurser.",
+  "landing.templatesItemEvent": "Eventanmälan",
+  "landing.templatesItemEventDesc": "Marknadsför webbinarier, workshops eller event med ett tydligt formulär.",
+  "landing.workTitle": "Användningsfall",
+  "landing.workDescription":
+    "Landify ger dig en trygg plats för kampanjer utanför din huvudsajt – perfekt för annonser, lanseringar och experiment.",
+  "landing.workExploreTemplates": "Utforska mallar",
+  "landing.useCase1Title": "Lansering för lokalt café",
+  "landing.useCase1Category": "Småföretag",
+  "landing.useCase1Desc":
+    "Marknadsför en ny meny, helgerbjudande eller ett event med en fokuserad landningssida från Instagram och Google Maps.",
+  "landing.useCase1Badge1": "Click & collect",
+  "landing.useCase1Badge2": "Helgerbjudande",
+  "landing.useCase2Title": "Creator lead magnet",
+  "landing.useCase2Category": "Skapare & coaching",
+  "landing.useCase2Desc":
+    "Erbjud en gratis guide, checklista eller mini-kurs och samla e-post utan att röra din huvudsajt.",
+  "landing.useCase2Badge1": "E-postinsamling",
+  "landing.useCase2Badge2": "Lead magnet",
+  "landing.useCase3Title": "Internt kampanjnav",
+  "landing.useCase3Category": "Marknadsteam",
+  "landing.useCase3Desc":
+    "Spinn upp tillfälliga sidor för kampanjer, event eller produktexperiment utan att involvera utveckling.",
+  "landing.useCase3Badge1": "Interna verktyg",
+  "landing.useCase3Badge2": "Experiment",
+  "landing.finalCtaTitle": "Redo att lansera din nästa landningssida?",
+  "landing.finalCtaSubtitle": "Bygg landningssidor idag, kom igång gratis",
+  "landing.footerDescription":
+    "Ett fokuserat verktyg för kampanjlandningssidor – byggt för små team, skapare och företag som behöver agera snabbt.",
+  "landing.footerProduct": "Produkt",
+  "landing.footerTeams": "För team",
+  "landing.footerTeamMarketing": "Marknadsteam",
+  "landing.footerTeamAgencies": "Byråer",
+  "landing.footerTeamCreators": "Skapare & coacher",
+  "landing.footerTeamSmallBiz": "Småföretag",
+  "landing.footerContact": "Kontakt",
+  "landing.footerContactText": "Har du feedback eller vill diskutera funktioner?",
+  "landing.footerRights": "Byggt som ett examprojekt.",
+  "landing.footerTag1": "Tillgänglighet först",
+  "landing.footerTag2": "TypeScript + .NET",
+
 } as const;
