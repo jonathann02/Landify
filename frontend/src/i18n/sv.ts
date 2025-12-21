@@ -79,4 +79,22 @@ export const sv = {
   "landing.footerTag1": "Tillgänglighet först",
   "landing.footerTag2": "TypeScript + .NET",
 
+  "auth.loginTitle": "Välkommen tillbaka till Landify",
+  "auth.loginSubtitle": "Logga in för att hantera dina landningssidor.",
+  "auth.registerTitle": "Skapa ditt Landify-konto",
+  "auth.registerSubtitle": "Börja bygga landningssidor utan att röra WordPress.",
+  "auth.email": "E-postadress",
+  "auth.password": "Lösenord",
+  "auth.confirmPassword": "Bekräfta lösenord",
+  "auth.passwordRequirement": "Minst 8 tecken.",
+  "auth.loginButton": "Logga in",
+  "auth.loginLoading": "Loggar in...",
+  "auth.registerButton": "Skapa konto",
+  "auth.registerLoading": "Skapar konto...",
+  "auth.noAccount": "Har du inget konto?",
+  "auth.createOne": "Skapa ett",
+  "auth.haveAccount": "Har du redan ett konto?",
+  "auth.loginLink": "Logga in",
+  "auth.missingToken": "Token saknas i svaret. Försök logga in.",
+
 } as const;

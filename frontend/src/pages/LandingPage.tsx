@@ -6,6 +6,7 @@ import { Work } from "../components/marketing/Work";
 import { FinalCta } from "../components/marketing/FinalCta";
 import { Footer } from "../components/marketing/Footer";
 
+
 export function LandingPage() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-indigo-500/30">

@@ -80,4 +80,24 @@ export const en = {
   "landing.footerTag1": "Accessibility first",
   "landing.footerTag2": "TypeScript + .NET",
 
+
+
+  "auth.loginTitle": "Welcome back to Landify",
+  "auth.loginSubtitle": "Sign in to manage your landing pages.",
+  "auth.registerTitle": "Create your Landify account",
+  "auth.registerSubtitle": "Start building landing pages without touching WordPress.",
+  "auth.email": "Email address",
+  "auth.password": "Password",
+  "auth.confirmPassword": "Confirm password",
+  "auth.passwordRequirement": "At least 8 characters.",
+  "auth.loginButton": "Log in",
+  "auth.loginLoading": "Logging in...",
+  "auth.registerButton": "Create account",
+  "auth.registerLoading": "Creating account...",
+  "auth.noAccount": "Don't have an account?",
+  "auth.createOne": "Create one",
+  "auth.haveAccount": "Already have an account?",
+  "auth.loginLink": "Log in",
+  "auth.missingToken": "Missing token in response. Please try logging in.",
+
 } as const;
