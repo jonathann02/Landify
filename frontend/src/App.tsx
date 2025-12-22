@@ -7,6 +7,7 @@ import { RegisterPage } from "./pages/RegisterPage";
 import { RequireAuth } from "./components/RequireAuth";
 import { AppLayout } from "./layouts/AppLayout";
 import { DashboardPage } from "./pages/DashboardPage";
+import { SiteEditorPage } from "./pages/SiteEditorPage";
 
 
 
@@ -25,6 +26,7 @@ function App() {
       }
       >
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/sites/:siteId/editor" element={<SiteEditorPage />} />
         </Route>
 
 
