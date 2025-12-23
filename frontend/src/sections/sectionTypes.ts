@@ -43,7 +43,7 @@ export type SectionContent =
   }
 
 
-  export const SECTION_DEFINTIONS: Record<
+  export const SECTION_DEFINITIONS: Record<
     SectionType,
     {
         label: string; 
@@ -85,4 +85,4 @@ export type SectionContent =
     },
         }; 
 
-    export const SECTION_TYPES: SectionType[] = Object.keys(SECTION_DEFINTIONS) as SectionType[];
+    export const SECTION_TYPES: SectionType[] = Object.keys(SECTION_DEFINITIONS) as SectionType[];
