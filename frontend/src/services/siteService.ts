@@ -1,4 +1,7 @@
 import { API_BASE_URL } from "../config/api";
+import type { Section } from "./sectionService";
+import type { SectionDto } from "./sectionService";
+import { mapSectionDto } from "./sectionService";
 
 export interface SiteSummary {
   id: string;
@@ -10,81 +13,91 @@ export interface SiteSummary {
   updatedAt: string;
 }
 
-export interface CreateSitePayload {
-    name: string; 
+export type Site = SiteSummary; 
+
+export interface SiteWithSections extends SiteSummary {
+    sections: Section[]; 
 }
 
-
-const USE_MOCK_SITES = true; 
-
-let mockSites: SiteSummary[] = [
-    {
-        id: crypto.randomUUID(),
-        userId: "mock-user",
-        name: "min första sajt", 
-        slug: null, 
-        isPublished: false, 
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-    },
-    {
-        id: crypto.randomUUID(),
-        userId: "mock-user",
-        name: "landify kampanj",
-        slug: "landify-kampanj",
-        isPublished: true,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-    },
-];
+export interface CreateSitePayload {
+    name: string;
+}
 
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
-  const token = localStorage.getItem("landify_token");
+    const token = localStorage.getItem("landify_token"); 
+    const headers: Record<string, string> = {
+        Accept: "application/json", 
+        ...(init?.headers as Record<string, string>),
+    }; 
 
-  const res = await fetch(`${API_BASE_URL}${path}`, {
-    ...init,
-    headers: {
-      Accept: "application/json",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(init?.body ? { "Content-Type": "application/json" } : {}),
-      ...(init?.headers ?? {}),
-    },
-  });
+    if (token) {
+        headers["Authorization"] = `Bearer ${token}`;
+    }
 
-   const contentType = res.headers.get("content-type") ?? "";
+    if (init?.body && !headers["Content-Type"]) {
+        headers["Content-Type"] = "application/json";
+    }
+
+    const response = await fetch(`${API_BASE_URL}${path}`, {
+        ...init,
+        headers,
+    });
+
+  const contentType = response.headers.get("content-type") ?? "";
   const isJson = contentType.includes("application/json");
-  const data = isJson ? await res.json().catch(() => ({})) : null;
+  const text = isJson ? await response.text() : "";
+  const data = isJson && text ? JSON.parse(text) : undefined;
 
-   if (!res.ok) {
-    const message = (data && (data.message || data.error)) || res.statusText || "Request failed";
+    if (!response.ok) {
+    const message =
+      (data && (data.message || data.error)) ||
+      response.statusText ||
+      "Request failed";
     throw new Error(message);
   }
 
-  return data as T;
+     return data as T;
 }
 
 export async function getSites(): Promise<SiteSummary[]> {
-  if (USE_MOCK_SITES) return mockSites;
   return apiFetch<SiteSummary[]>("/sites");
 }
 
-export async function createSite(payload: CreateSitePayload): Promise<SiteSummary> {
-    if (USE_MOCK_SITES) {
-        const now = new Date().toISOString();
-        const created: SiteSummary = {
-            id: crypto.randomUUID(),
-            userId: "mock-user",
-            name: payload.name,
-            slug: null,
-            isPublished: false,
-            createdAt: now,
-            updatedAt: now,
-        };
-        mockSites = [created, ...mockSites]; 
-        return created;
-    }
-    return apiFetch<SiteSummary>("/sites", {
+export async function createSite(payload: CreateSitePayload): Promise<Site> {
+  return apiFetch<Site>("/sites", {
     method: "POST",
     body: JSON.stringify(payload),
-    });
+  });
+}
+
+export async function getSiteById(id: string): Promise<SiteWithSections> {
+  const raw = await apiFetch<SiteSummary & { sections?: SectionDto[] | null }>(`/sites/${id}`);
+  return {
+    ...raw,
+    sections: (raw.sections ?? []).map(mapSectionDto),
+  };
+}
+
+export async function getPublicSiteBySlug(slug: string): Promise<SiteWithSections> {
+  const raw = await apiFetch<SiteSummary & { sections: SectionDto[] }>(`/public/sites/${slug}`);
+  return {
+    ...raw,
+    sections: (raw.sections ?? []).map(mapSectionDto).sort((a, b) => a.sortOrder - b.sortOrder),
+  };
+}
+
+export async function publishSite(id: string): Promise<SiteWithSections> {
+  const raw = await apiFetch<SiteSummary & { sections?: SectionDto[] | null }>(`/sites/${id}/publish`, {
+    method: "POST",
+  });
+  return {
+    ...raw,
+    sections: (raw.sections ?? []).map(mapSectionDto),
+  };
+}
+
+export async function deleteSite(id: string): Promise<void> {
+  await apiFetch<void>(`/sites/${id}`, {
+    method: "DELETE",
+  });
 }
