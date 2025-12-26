@@ -100,4 +100,27 @@ export const en = {
   "auth.loginLink": "Log in",
   "auth.missingToken": "Missing token in response. Please try logging in.",
 
+
+  "dashboard.title": "My Sites",
+  "dashboard.subtitle": "Manage your landing pages and jump into the editor.",
+  "dashboard.toggleFormOpen": "New landing page",
+  "dashboard.toggleFormClose": "Close",
+  "dashboard.siteNameLabel": "Site name",
+  "dashboard.siteNamePlaceholder": "e.g. Launch Campaign",
+  "dashboard.createError": "Failed to create site",
+  "dashboard.createSubmit": "Create site",
+  "dashboard.creating": "Creating...",
+  "dashboard.createNote": "A draft site will be created.",
+  "dashboard.loading": "Loading sites...",
+  "dashboard.error": "Failed to load sites",
+  "dashboard.emptyTitle": "No sites yet",
+  "dashboard.emptySubtitle": "Create your first landing page to get started.",
+  "dashboard.statusPublished": "Published",
+  "dashboard.statusDraft": "Draft",
+  "dashboard.updatedPrefix": "Updated",
+  "dashboard.delete": "Delete",
+  "dashboard.deleting": "Deleting...",
+  "dashboard.deleteConfirm":
+  "Delete this landing page? This cannot be undone and all sections will be removed.",
+
 } as const;

@@ -97,4 +97,26 @@ export const sv = {
   "auth.loginLink": "Logga in",
   "auth.missingToken": "Token saknas i svaret. Försök logga in.",
 
+  "dashboard.title": "Mina sidor",
+  "dashboard.subtitle": "Hantera dina landningssidor och hoppa in i editorn.",
+  "dashboard.toggleFormOpen": "Ny landningssida",
+  "dashboard.toggleFormClose": "Stäng",
+  "dashboard.siteNameLabel": "Sidnamn",
+  "dashboard.siteNamePlaceholder": "t.ex. Lanseringskampanj",
+  "dashboard.createError": "Kunde inte skapa sidan",
+  "dashboard.createSubmit": "Skapa sida",
+  "dashboard.creating": "Skapar...",
+  "dashboard.createNote": "En utkast-sida skapas.",
+  "dashboard.loading": "Laddar sidor...",
+  "dashboard.error": "Kunde inte ladda sidor",
+  "dashboard.emptyTitle": "Inga sidor ännu",
+  "dashboard.emptySubtitle": "Skapa din första landningssida för att komma igång.",
+  "dashboard.statusPublished": "Publicerad",
+  "dashboard.statusDraft": "Utkast",
+  "dashboard.updatedPrefix": "Uppdaterad",
+  "dashboard.delete": "Radera",
+  "dashboard.deleting": "Raderar...",
+  "dashboard.deleteConfirm":
+  "Radera denna landningssida? Det går inte att ångra och alla sektioner tas bort.",
+
 } as const;
