@@ -123,4 +123,7 @@ export const en = {
   "dashboard.deleteConfirm":
   "Delete this landing page? This cannot be undone and all sections will be removed.",
 
+
+  "editor.canvasEmpty": "Drag a section from the palette to start building.",
+
 } as const;

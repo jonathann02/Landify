@@ -119,4 +119,7 @@ export const sv = {
   "dashboard.deleteConfirm":
   "Radera denna landningssida? Det går inte att ångra och alla sektioner tas bort.",
 
+
+  "editor.canvasEmpty": "Dra en sektion från paletten för att börja bygga.",
+
 } as const;
