@@ -126,4 +126,34 @@ export const en = {
 
   "editor.canvasEmpty": "Drag a section from the palette to start building.",
 
+
+
+  "inspector.selectSection": "Select a section to edit.",
+  "inspector.heading": "Heading",
+  "inspector.subheading": "Subheading",
+  "inspector.ctaLabel": "CTA label",
+  "inspector.ctaUrl": "CTA URL",
+  "inspector.backgroundImageUrl": "Background image URL",
+  "inspector.featureItems": "Feature items",
+  "inspector.title": "Title",
+  "inspector.description": "Description",
+  "inspector.plans": "Plans",
+  "inspector.questions": "Questions",
+  "inspector.question": "Question",
+  "inspector.answer": "Answer",
+  "inspector.author": "Author",
+  "inspector.role": "Role",
+  "inspector.avatarUrl": "Avatar URL",
+  "inspector.name": "Name",
+  "inspector.price": "Price",
+  "inspector.period": "Period",
+  "inspector.featuresList": "Features (comma separated)",
+  "inspector.quote": "Quote",
+  "editor.inspectorSubtitle": "Edit the content for this section.",
+   "editor.saveChanges": "Save changes",
+    "editor.saving": "Saving...",
+
+  "editor.deleteSection": "Delete section",
+  "editor.deleting": "Deleting...",
+
 } as const;

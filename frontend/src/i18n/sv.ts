@@ -122,4 +122,34 @@ export const sv = {
 
   "editor.canvasEmpty": "Dra en sektion från paletten för att börja bygga.",
 
+
+  "inspector.selectSection": "Välj en sektion att redigera.",
+  "inspector.heading": "Rubrik",
+  "inspector.subheading": "Underrubrik",
+  "inspector.ctaLabel": "CTA-text",
+  "inspector.ctaUrl": "CTA-URL",
+  "inspector.backgroundImageUrl": "Bakgrundsbild-URL",
+  "inspector.featureItems": "Feature-poster",
+  "inspector.title": "Titel",
+  "inspector.description": "Beskrivning",
+  "inspector.plans": "Planer",
+  "inspector.questions": "Frågor",
+  "inspector.question": "Fråga",
+  "inspector.answer": "Svar",
+  "inspector.author": "Författare",
+  "inspector.role": "Roll",
+  "inspector.avatarUrl": "Avatar-URL",
+  "inspector.name": "Namn",
+  "inspector.price": "Pris",
+  "inspector.period": "Period",
+  "inspector.featuresList": "Funktioner (kommaseparerade)",
+  "inspector.quote": "Citat",
+  "editor.inspectorSubtitle": "Redigera innehållet för denna sektion.",
+   "editor.saveChanges": "Spara ändringar",
+  "editor.saving": "Sparar...",
+  "editor.deleteSection": "Radera sektion",
+  "editor.deleting": "Raderar...",
+
+
+
 } as const;
