@@ -137,23 +137,29 @@ export const en = {
   "inspector.featureItems": "Feature items",
   "inspector.title": "Title",
   "inspector.description": "Description",
-  "inspector.plans": "Plans",
-  "inspector.questions": "Questions",
-  "inspector.question": "Question",
-  "inspector.answer": "Answer",
-  "inspector.author": "Author",
-  "inspector.role": "Role",
   "inspector.avatarUrl": "Avatar URL",
   "inspector.name": "Name",
-  "inspector.price": "Price",
-  "inspector.period": "Period",
   "inspector.featuresList": "Features (comma separated)",
-  "inspector.quote": "Quote",
   "editor.inspectorSubtitle": "Edit the content for this section.",
    "editor.saveChanges": "Save changes",
     "editor.saving": "Saving...",
 
   "editor.deleteSection": "Delete section",
   "editor.deleting": "Deleting...",
+
+"editor.deleteSectionConfirm": "Delete this section? This cannot be undone.",
+"editor.invalidSite": "Invalid site id.",
+"editor.loading": "Loading editor...",
+"editor.subtitle": "Drag sections from the palette onto the canvas.",
+"editor.viewLive": "View live",
+"editor.publishing": "Publishing...",
+"editor.publish": "Publish",
+"editor.paletteTitle": "Palette",
+"editor.paletteSubtitle": "Drag a section onto the canvas.",
+"editor.canvasTitle": "Canvas",
+"editor.canvasSubtitle": "Reorder sections by dragging.",
+
+
+
 
 } as const;

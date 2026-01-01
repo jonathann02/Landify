@@ -151,5 +151,20 @@ export const sv = {
   "editor.deleting": "Raderar...",
 
 
+  "editor.invalidSite": "Ogiltigt sid-ID.",
+  "editor.loading": "Laddar editor...",
+  "editor.error": "Kunde inte ladda sidan",
+  "editor.subtitle": "Dra sektioner från paletten till canvasen.",
+  "editor.viewLive": "Visa live",
+  "editor.publish": "Publicera",
+  "editor.publishing": "Publicerar...",
+  "editor.publishError": "Kunde inte publicera sidan",
+  "editor.paletteTitle": "Palett",
+  "editor.paletteSubtitle": "Dra en sektion till canvasen.",
+  "editor.canvasTitle": "Canvas",
+  "editor.canvasSubtitle": "Ändra ordning genom att dra.",
+ "editor.deleteSectionConfirm": "Radera denna sektion? Det går inte att ångra.",
+
+
 
 } as const;

@@ -8,6 +8,7 @@ import { RequireAuth } from "./components/RequireAuth";
 import { AppLayout } from "./layouts/AppLayout";
 import { DashboardPage } from "./pages/DashboardPage";
 import { SiteEditorPage } from "./pages/SiteEditorPage";
+import { PublicSitePage } from "./pages/PublicSitePage";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/s/:slug" element={<PublicSitePage />} />
 
       <Route 
       element={

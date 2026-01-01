@@ -193,7 +193,7 @@ function SiteCard({ site, onOpen, onDelete, isDeleting, t }: SiteCardProps) {
                     <p className="text-sm text-white/70">{t("dashboard.subtitle")}</p>
                 </div>
 
-                <button type="button" onClick={() => setShowForm(true)}
+                <button type="button" onClick={() => setShowForm((v) => !v)}
                 className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400/70">
                     {showForm ? t("dashboard.toggleFormClose") : t("dashboard.toggleFormOpen")}
                 </button>
