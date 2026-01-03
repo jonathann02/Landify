@@ -6,9 +6,9 @@ using Landify.Infrastructure.Persistence;
 using Landify.Infrastructure.Repositories;
 using Landify.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 
 namespace Landify.Infrastructure;
 
@@ -22,7 +22,7 @@ public static class DependencyInjection
         services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
 
         services.AddDbContext<LandifyDbContext>(options =>
-            options.UseSqlite(connectionString));
+            options.UseSqlServer(connectionString));
 
         services
             .AddIdentityCore<AppUser>(options =>
