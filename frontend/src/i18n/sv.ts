@@ -19,22 +19,22 @@ export const sv = {
   "landing.servicesTitle": "Hur Landify funkar",
   "landing.servicesDescription":
     "Landify är gjort för team som behöver landningssidor snabbt men vill slippa risk och overhead från tunga webbsidebyggare.",
-  "landing.servicesStep1Title": "Välj en layout",
+  "landing.servicesStep1Title": "Skapa en sajt",
   "landing.servicesStep1Desc":
-    "Börja från en ren layout eller en färdig mall för din kampanj – inga teman eller sidbyggare behövs.",
+    "Vi har fokuserat på att göra denna process så enkel och snabb som möjligt.",
   "landing.servicesStep2Title": "Lägg till sektioner",
   "landing.servicesStep2Desc":
-    "Lägg till hero, features, testimonials och kontaktsektioner med enkla formulär i stället för krångliga editors.",
+    "Lägg till hero, features, med mera med en enkel drag and drop istället för krångliga editors.",
   "landing.servicesStep3Title": "Publicera och dela",
   "landing.servicesStep3Desc":
     "Publicera sidan till en delbar URL du kan använda i annonser, e-postkampanjer eller sociala medier.",
   "landing.servicesStep4Title": "Iterera snabbt",
   "landing.servicesStep4Desc":
-    "Duplicera sidor, justera sektioner och kör A/B-liknande experiment utan att be en utvecklare om hjälp.",
+    "Justera sektioner och kör A/B-liknande experiment utan att be en utvecklare om hjälp.",
   "landing.servicesFootnote": "Enkelt från dag ett",
-  "landing.templatesTitle": "Startmallar",
+  "landing.templatesTitle": "Bygg egna startmallar",
   "landing.templatesDescription":
-    "Landify kommer med ett litet urval åsiktsfulla mallar – i den första versionen bygger du sidor från sektioner inspirerade av dessa layouter.",
+    "Ett tips är att bygga mallar för olika användningsfall som inspiration.",
   "landing.templatesItemSimple": "Enkel lansering",
   "landing.templatesItemSimpleDesc": "Ren hero, features och CTA för produkt- eller tjänstelanser.",
   "landing.templatesItemLead": "Lead magnet",
@@ -44,14 +44,14 @@ export const sv = {
   "landing.workTitle": "Användningsfall",
   "landing.workDescription":
     "Landify ger dig en trygg plats för kampanjer utanför din huvudsajt – perfekt för annonser, lanseringar och experiment.",
-  "landing.workExploreTemplates": "Utforska mallar",
+  "landing.workExploreTemplates": "Se inspirationsmallar",
   "landing.useCase1Title": "Lansering för lokalt café",
   "landing.useCase1Category": "Småföretag",
   "landing.useCase1Desc":
     "Marknadsför en ny meny, helgerbjudande eller ett event med en fokuserad landningssida från Instagram och Google Maps.",
   "landing.useCase1Badge1": "Click & collect",
   "landing.useCase1Badge2": "Helgerbjudande",
-  "landing.useCase2Title": "Creator lead magnet",
+  "landing.useCase2Title": "Få nya leads som influencer",
   "landing.useCase2Category": "Skapare & coaching",
   "landing.useCase2Desc":
     "Erbjud en gratis guide, checklista eller mini-kurs och samla e-post utan att röra din huvudsajt.",
@@ -132,15 +132,10 @@ export const sv = {
   "inspector.featureItems": "Feature-poster",
   "inspector.title": "Titel",
   "inspector.description": "Beskrivning",
-  "inspector.plans": "Planer",
-  "inspector.questions": "Frågor",
-  "inspector.question": "Fråga",
-  "inspector.answer": "Svar",
   "inspector.author": "Författare",
   "inspector.role": "Roll",
   "inspector.avatarUrl": "Avatar-URL",
   "inspector.name": "Namn",
-  "inspector.price": "Pris",
   "inspector.period": "Period",
   "inspector.featuresList": "Funktioner (kommaseparerade)",
   "inspector.quote": "Citat",

@@ -8,24 +8,28 @@ const useCases: {
   categoryKey: TranslationKey;
   descriptionKey: TranslationKey;
   badges: TranslationKey[];
+  imageSrc: string; 
 }[] = [
   {
     titleKey: "landing.useCase1Title",
     categoryKey: "landing.useCase1Category",
     descriptionKey: "landing.useCase1Desc",
     badges: ["landing.useCase1Badge1", "landing.useCase1Badge2"],
+    imageSrc: "/usecase1.png",
   },
   {
     titleKey: "landing.useCase2Title",
     categoryKey: "landing.useCase2Category",
     descriptionKey: "landing.useCase2Desc",
     badges: ["landing.useCase2Badge1", "landing.useCase2Badge2"],
+    imageSrc: "/usecase2.png",
   },
   {
     titleKey: "landing.useCase3Title",
     categoryKey: "landing.useCase3Category",
     descriptionKey: "landing.useCase3Desc",
     badges: ["landing.useCase3Badge1", "landing.useCase3Badge2"],
+    imageSrc: "/usecase3.png",
   },
 ];
 
@@ -114,22 +118,19 @@ export function Work() {
                   </div>
 
                   <div className="relative flex items-center justify-center p-10">
-                    <div className="glass relative flex h-64 w-full max-w-sm flex-col justify-between rounded-3xl border border-white/10 bg-slate-950/60 p-6">
-                      <div className="space-y-2">
-                        <div className="h-3 w-24 rounded-full bg-white/10" />
-                        <div className="h-7 w-40 rounded-full bg-white/80" />
-                        <div className="h-3 w-56 rounded-full bg-white/10" />
-                      </div>
-                      <div className="space-y-3">
-                        <div className="h-20 rounded-2xl bg-white/5" />
-                        <div className="flex gap-3">
-                          <div className="h-9 flex-1 rounded-full bg-indigo-500/80" />
-                          <div className="h-9 flex-1 rounded-full bg-white/5" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                   <div className="relative w-full max-w-sm overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60 aspect-[16/10]">
+                   <img
+                   src={useCase.imageSrc}
+                   loading="lazy"
+                   decoding="async"
+                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                   />
+
+                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-slate-950/60 via-slate-950/10 to-indigo-600/20" />
                 </div>
+            </div>
+        </div>
+               
               </GlassCard>
             </motion.div>
           ))}

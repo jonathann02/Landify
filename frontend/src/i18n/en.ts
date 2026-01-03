@@ -20,22 +20,22 @@ export const en = {
   "landing.servicesTitle": "How Landify works",
   "landing.servicesDescription":
     "Landify is designed for teams who need landing pages quickly but don't want the risk and overhead of full website builders.",
-  "landing.servicesStep1Title": "Pick a layout",
+  "landing.servicesStep1Title": "Create a site",
   "landing.servicesStep1Desc":
-    "Start from a clean layout or a preset template for your campaign – no themes or page builders required.",
+    "We have focused on making this process as simple and quick as possible.",
   "landing.servicesStep2Title": "Drop in sections",
   "landing.servicesStep2Desc":
-    "Add hero, features, testimonials, and contact sections with simple forms instead of complex editors.",
+    "Add hero, features, and more with our simple drag and drop instead of complex editors.",
   "landing.servicesStep3Title": "Publish and share",
   "landing.servicesStep3Desc":
     "Publish your page to a shareable URL you can use in ads, email campaigns, or social media bios.",
   "landing.servicesStep4Title": "Iterate quickly",
   "landing.servicesStep4Desc":
-    "Duplicate pages, tweak sections, and run A/B-style experiments without asking a developer for help.",
+    "Tweak sections, and run A/B-style experiments without asking a developer for help.",
   "landing.servicesFootnote": "Simple from day one",
-  "landing.templatesTitle": "Starter templates",
+  "landing.templatesTitle": "Build your own starter templates",
   "landing.templatesDescription":
-    "Landify will ship with a small set of opinionated templates – in this first version, you build pages from sections inspired by these layouts.",
+    "A tip is to create your own templates for different use cases as inspiration.",
   "landing.templatesItemSimple": "Simple launch",
   "landing.templatesItemSimpleDesc": "Clean hero, features, and CTA for product or service launches.",
   "landing.templatesItemLead": "Lead magnet",
@@ -45,7 +45,7 @@ export const en = {
   "landing.workTitle": "Use cases",
   "landing.workDescription":
     "Landify gives you a safe space for campaigns outside your main website – perfect for ads, launches and experiments.",
-  "landing.workExploreTemplates": "Explore templates",
+  "landing.workExploreTemplates": "See inspiration templates",
   "landing.useCase1Title": "Local café launch",
   "landing.useCase1Category": "Small business",
   "landing.useCase1Desc":
