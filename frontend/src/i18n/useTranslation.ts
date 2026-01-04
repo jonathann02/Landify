@@ -1,5 +1,5 @@
 import { translate, type TranslationKey } from ".";
-import { useLanguage } from "./LanguageContext.ts"; 
+import { useLanguage } from "./LanguageContext"; 
 
 export function useTranslation() {
   const { language } = useLanguage();

@@ -6,7 +6,7 @@ import {
 } from "react";
 
 import type { Language } from "./index";
-import { LanguageContext, type LanguageContextValue } from "./LanguageContext.ts"; 
+import { LanguageContext, type LanguageContextValue } from "./LanguageContext"; 
 
 const LANGUAGE_STORAGE_KEY = "landify_lang";
 const DEFAULT_LANGUAGE: Language = "en";

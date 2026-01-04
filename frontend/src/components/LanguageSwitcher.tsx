@@ -1,4 +1,4 @@
-import { useLanguage } from "../i18n/LanguageContext.ts";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
