@@ -195,11 +195,8 @@ function HeroInspectorFields({
       <TextAreaField label={t("inspector.subheading")} value={value.subheading} rows={2} onChange={(v) => update({ subheading: v })} />
       <TextField label={t("inspector.ctaLabel")} value={value.ctaLabel} onChange={(v) => update({ ctaLabel: v })} />
       <TextField label={t("inspector.ctaUrl")} value={value.ctaUrl} onChange={(v) => update({ ctaUrl: v })} />
-      <TextField
-        label={t("inspector.backgroundImageUrl")}
-        value={value.backgroundImageUrl ?? ""}
-        onChange={(v) => update({ backgroundImageUrl: v })}
-      />
+
+      
     </div>
   );
 }
